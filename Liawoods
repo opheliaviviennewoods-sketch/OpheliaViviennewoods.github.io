@@ -1,0 +1,135 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Midnight Quill</title>  <!-- Google Fonts -->  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">  <style>
+    :root {
+      --bg: #0f0f12;
+      --card: #18181d;
+      --text: #eaeaea;
+      --muted: #b6b6c0;
+      --accent: #c9a46b;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.8;
+    }
+
+    header {
+      padding: 4rem 2rem 3rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      color: var(--muted);
+      margin-top: 0.8rem;
+      font-style: italic;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .novel-card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    .novel-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .novel-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .novel-card span {
+      color: var(--accent);
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .novel-card p {
+      margin-top: 1rem;
+      color: var(--muted);
+    }
+
+    .read-btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.4rem;
+      border: 1px solid var(--accent);
+      border-radius: 30px;
+      text-decoration: none;
+      color: var(--accent);
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .read-btn:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style></head>
+<body>  <header>
+    <h1>Midnight Quill</h1>
+    <p>Where stories breathe in silence</p>
+  </header>  <main><div class="novel-card">
+  <h2>The Silence Between Us</h2>
+  <span>Romance · Drama</span>
+  <p>
+    A slow-burning story about unspoken love, fractured timing, and the ache of almosts.
+  </p>
+  <a href="#" class="read-btn">Read Novel</a>
+</div>
+
+<div class="novel-card">
+  <h2>Ink & Ice</h2>
+  <span>Dark Romance</span>
+  <p>
+    When obsession bleeds into devotion, love becomes dangerous — and unforgettable.
+  </p>
+  <a href="#" class="read-btn">Read Novel</a>
+</div>
+
+  </main>  <footer>
+    © 2026 Midnight Quill · All stories belong to their author
+  </footer></body>
+</html>
