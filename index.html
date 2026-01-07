@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ophilia Vivienne Woods</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f0f14;
+      --card:#161622;
+      --text:#f2f2f2;
+      --muted:#b7b7c2;
+      --accent:#c9a86a;
+    }*{box-sizing:border-box;}
+
+body{
+  margin:0;
+  background:linear-gradient(180deg,#0d0d12,#141421);
+  color:var(--text);
+  font-family:'Inter',sans-serif;
+  line-height:1.7;
+}
+
+header{
+  padding:4rem 1.5rem 3rem;
+  text-align:center;
+}
+
+header h1{
+  font-family:'Playfair Display',serif;
+  font-size:3rem;
+  font-weight:600;
+  letter-spacing:0.04em;
+  margin:0;
+}
+
+header p{
+  color:var(--muted);
+  max-width:600px;
+  margin:1rem auto 0;
+  font-style:italic;
+}
+
+nav{
+  display:flex;
+  justify-content:center;
+  gap:2rem;
+  margin-top:2rem;
+  font-size:0.95rem;
+}
+
+nav a{
+  color:var(--muted);
+  text-decoration:none;
+  position:relative;
+}
+
+nav a::after{
+  content:'';
+  position:absolute;
+  width:0;
+  height:1px;
+  background:var(--accent);
+  left:0;
+  bottom:-4px;
+  transition:width .3s ease;
+}
+
+nav a:hover::after{width:100%;}
+
+main{
+  max-width:1100px;
+  margin:0 auto;
+  padding:3rem 1.5rem 5rem;
+}
+
+section{
+  margin-bottom:4rem;
+}
+
+section h2{
+  font-family:'Playfair Display',serif;
+  font-size:2rem;
+  margin-bottom:1.5rem;
+  color:var(--accent);
+}
+
+.novels{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:2rem;
+}
+
+.card{
+  background:var(--card);
+  padding:2rem;
+  border-radius:14px;
+  box-shadow:0 20px 40px rgba(0,0,0,.35);
+  transition:transform .3s ease, box-shadow .3s ease;
+}
+
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 30px 60px rgba(0,0,0,.45);
+}
+
+.card h3{
+  font-family:'Playfair Display',serif;
+  margin-top:0;
+  margin-bottom:.5rem;
+  font-size:1.4rem;
+}
+
+.card p{
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.read-btn{
+  display:inline-block;
+  margin-top:1.5rem;
+  padding:.6rem 1.2rem;
+  border:1px solid var(--accent);
+  color:var(--accent);
+  text-decoration:none;
+  border-radius:30px;
+  font-size:.85rem;
+  letter-spacing:.08em;
+  transition:all .3s ease;
+}
+
+.read-btn:hover{
+  background:var(--accent);
+  color:#0f0f14;
+}
+
+.about{
+  max-width:700px;
+}
+
+footer{
+  text-align:center;
+  padding:2rem 1rem;
+  color:var(--muted);
+  font-size:.8rem;
+  border-top:1px solid rgba(255,255,255,.05);
+}
+
+@media(max-width:600px){
+  header h1{font-size:2.2rem;}
+}
+
+  </style>
+</head>
+<body><header>
+  <h1>Ophilia Vivienne Woods</h1>
+  <p>Stories written in shadows, longing, and quiet devotion.</p>
+  <nav>
+    <a href="#novels">Novels</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header><main>  <section id="novels">
+    <h2>Novels</h2>
+    <div class="novels">
+      <div class="card">
+        <h3>The Unwritten Vow</h3>
+        <p>A slow-burning tale of restraint, obsession, and the words never spoken.</p>
+        <a class="read-btn" href="#">Read</a>
+      </div><div class="card">
+    <h3>Where Silence Knows My Name</h3>
+    <p>A love story shaped by distance, memory, and the ache of recognition.</p>
+    <a class="read-btn" href="#">Read</a>
+  </div>
+
+  <div class="card">
+    <h3>Ink Beneath the Skin</h3>
+    <p>When devotion turns public, and the truth refuses to stay hidden.</p>
+    <a class="read-btn" href="#">Read</a>
+  </div>
+</div>
+
+  </section>  <section id="about">
+    <h2>About the Author</h2>
+    <div class="about">
+      <p>
+        Ophilia Vivienne Woods writes emotionally driven fiction that lingers long after the final page. Her stories explore obsession, vulnerability, restraint, and the quiet violence of love.
+      </p>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p style="color:var(--muted)">For collaborations or reader messages, write to <em>ophiliawrites@email.com</em></p>
+  </section></main><footer>
+  © 2026 Ophilia Vivienne Woods. All rights reserved.
+</footer></body>
+</html>
